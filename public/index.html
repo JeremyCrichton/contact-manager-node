@@ -11,9 +11,9 @@
     />
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/ui.css" />
-    <script src="/javascripts/jquery.js"></script>
-    <script src="/javascripts/handlebars.js"></script>
-    <script src="/javascripts/main.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/handlebars.js"></script>
+    <script src="javascripts/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -70,16 +70,30 @@
     </footer>
     <script id="template-contact" type="text/x-handlebars-template">
       <li data-id={{id}}>
-        <h3 class="contacts__name">{{name}}</h3>
+        <h3 class='contacts__name'>
+          {{name}}
+        </h3>
         <dl>
-          <dt>Phone Number:</dt>
-          <dd>{{phone}}</dd>
-          <dt>Email:</dt>
-          <dd>{{email}}</dd>
+          <dt>
+            Phone Number:
+          </dt>
+          <dd>
+            {{phone}}
+          </dd>
+          <dt>
+            Email:
+          </dt>
+          <dd>
+            {{email}}
+          </dd>
         </dl>
-        <div class="contacts__buttons">
-          <button class="btn btn--small contacts__btn-edit">Edit</button>
-          <button class="btn btn--small contacts__btn-delete">Delete</button>
+        <div class='contacts__buttons'>
+          <button class='btn btn--small contacts__btn-edit'>
+            Edit
+          </button>
+          <button class='btn btn--small contacts__btn-delete'>
+            Delete
+          </button>
         </div>
       </li>
     </script>
